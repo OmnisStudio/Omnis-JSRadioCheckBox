@@ -1,0 +1,20 @@
+Do iList.$unfilter(0)
+
+If not(iAgeRange1)
+	Do iList.$filter(not(iAge<=20))
+End If
+
+If not(iAgeRange2)
+	Do iList.$filter(not(iAge>=21&iAge<=40))
+End If
+
+If not(iAgeRange3)
+	Do iList.$filter(not(iAge>40))
+End If
+
+Switch iFilter
+	Case 1
+		Do iList.$filter(iGender='F')
+	Case 2
+		Do iList.$filter(iGender='M')
+End Switch

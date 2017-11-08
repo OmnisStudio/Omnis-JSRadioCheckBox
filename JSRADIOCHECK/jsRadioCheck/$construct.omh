@@ -1,0 +1,14 @@
+;  Enter your initialization code here
+
+Do iList.$define(iName,iGender,iAge)
+Do iList.$add('Jane','F',21)
+Do iList.$add('Alex','M',41)
+Do iList.$add('Harry','M',19)
+Do iList.$add('William','M',32)
+Do iList.$add('Sarah','F',27)
+Do iList.$add('Ben','M',31)
+Do iList.$add('Carol','F',49)
+Do iList.$add('Alan','M',60)
+Do iList.$add('Kate','F',17)
+
+Do iList.$smartlist.$assign(kTrue)

@@ -1,0 +1,10 @@
+On evHeaderClick
+	;  sort on server when using smartlists
+	If pHorzCell=iLastCol
+		Calculate iDescending as not(iDescending)
+	Else
+		Calculate iDescending as kFalse
+	End If
+	
+	Do iList.$sort($ref.C[pHorzCell],iDescending) Returns #F
+	Calculate iLastCol as pHorzCell
